@@ -1,10 +1,10 @@
 [package]
 name = "euler"
 version = "0.1.0"
-authors = ["Javier del Valle <javierdelvalle@protonmail.com>"]
+authors = ["Javier del Valle <jvalle@protonmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-ndarray = "0.13.0"
+plotlib = "0.5.1"

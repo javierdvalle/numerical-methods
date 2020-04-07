@@ -1,7 +1,7 @@
 [package]
-name = "euler"
+name = "pruebas"
 version = "0.1.0"
-authors = ["Javier del Valle <javierdelvalle@protonmail.com>"]
+authors = ["Javier del Valle <jvalle@protonmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
