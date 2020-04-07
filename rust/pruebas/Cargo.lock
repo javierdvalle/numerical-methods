@@ -13,13 +13,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bb1f6b1ce1c140482ea30ddd3335fc0024ac7ee112895426e0a629a6c20adfe3"
 
 [[package]]
-name = "euler"
-version = "0.1.0"
-dependencies = [
- "ndarray",
-]
-
-[[package]]
 name = "itertools"
 version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -78,6 +71,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c62be47e61d1842b9170f0fdeec8eba98e60e90e5446449a0545e5152acd7096"
 dependencies = [
  "autocfg",
+]
+
+[[package]]
+name = "pruebas"
+version = "0.1.0"
+dependencies = [
+ "ndarray",
 ]
 
 [[package]]
