@@ -3,4 +3,6 @@ from ..ode import method_order
 
 
 if __name__ == '__main__':
-	assert method_order(euler) == 1
+	order = method_order(euler)
+	print(f"euler: {order}")
+	assert order == 1

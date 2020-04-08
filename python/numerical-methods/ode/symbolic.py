@@ -4,7 +4,6 @@ t = Symbol('t')
 h = Symbol('h')
 y = Function('y')
 y1 = Function('y1')
-# f = Function('f')
 
 
 def taylor(f, n, a):
@@ -22,10 +21,7 @@ def method_order(f, method, t0, y0):
 
 	replacements = [ (y1(h).diff(h,0).subs({h:0}), numerical.subs({h:0})) ]
 	for i in range(1,7):
-		# EXACT
 		exact_eval = exact.subs({t:t0}).subs({y(0):y0})
-
-		# NUMERICAl
 		numerical = numerical.diff(h)
 		numerical_eval = numerical.subs({h:0})
 

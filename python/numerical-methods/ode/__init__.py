@@ -1,2 +1,2 @@
 from .methods.euler import euler
-from .tools import method_order
+from .numerical import method_order
