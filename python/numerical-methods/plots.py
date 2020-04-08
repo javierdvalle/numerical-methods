@@ -29,7 +29,7 @@ def plot_3d(Y, title=''):
     plt.draw()
 
 
-def plot_3d_function(f, a, root, title=''):
+def plot_3d_function(f, root, title=''):
     dim = len(root)
     assert dim == 2  # can only plot two-dimensional x
     n = 50
@@ -38,8 +38,8 @@ def plot_3d_function(f, a, root, title=''):
     for i in range(dim):
         xs = [j for j in x_axis_range for _ in x_axis_range]
         ys = list(y_axis_range) * len(y_axis_range)
-        zs = [f([x, y], a)[i] for x, y in zip(xs, ys)]
+        zs = [f([x, y])[i] for x, y in zip(xs, ys)]
         fig = plt.figure()
         ax = plt.gca(projection='3d')
         ax.scatter(xs, ys, zs, s=5)
-        ax.scatter(root[0], root[1], f(root, a)[i], s=60, c='red')
+        ax.scatter(root[0], root[1], f(root)[i], s=60, c='red')
