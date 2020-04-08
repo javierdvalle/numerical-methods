@@ -31,7 +31,7 @@ def method_order(f, method, t0, y0):
 
 		# add term
 		replacements.append( (y1(h).diff(h,i).subs({h:0}), numerical.subs({h:0})) )
-
+		print(replacements)
 		if numerical_eval != exact_eval:
 			print("-->  ORDER:", i-1, "- LOCAL ERROR:", (1/factorial(i))*(exact_eval-numerical_eval))
 			return i-1
