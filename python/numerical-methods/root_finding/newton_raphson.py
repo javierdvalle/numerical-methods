@@ -15,5 +15,4 @@ def newton_raphson(f, x0, maxiter=50, tol=0.000001, show_progress=False):
 		i+=1
 		if show_progress:
 			print(f"i={i}, x={xn}")
-
 	return xn

@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from ..utils import plot_data
-from ..utils import plot_2d
+from ..plots import plot_data
+from ..plots import plot_2d
 from ..ode import euler
 
 
