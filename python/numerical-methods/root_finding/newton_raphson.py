@@ -1,11 +1,7 @@
 import numpy as np
 
-from .differentiation import secant_derivate
-from .differentiation import jacobian
-
-
-def secant_derivate(f, x, h=0.001):
-    return (f(x+h)-f(x))/h
+from ..differentiation import secant_derivate
+from ..differentiation import jacobian
 
 
 def newton_raphson(f, x0, maxiter=50, tol=0.0001, show_progress=False):
