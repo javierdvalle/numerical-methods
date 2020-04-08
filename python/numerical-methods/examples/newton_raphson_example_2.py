@@ -10,9 +10,9 @@ if __name__ == '__main__':
 
     def my_f(x, a):
         return np.array([
-        	x[0] * x[1]-a[0],
-			x[0] + x[1]-a[1]
-		])
+            x[0] * x[1]-a[0],
+            x[0] + x[1]-a[1]
+        ])
 
     def my_f2(x, a):
         return np.array([
