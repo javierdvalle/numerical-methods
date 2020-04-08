@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 from ..utils import plot_data
 from ..utils import plot_3d
-from ..ode.euler import euler
+from ..ode import euler
 
 
 if __name__ == '__main__':
