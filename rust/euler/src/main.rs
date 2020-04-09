@@ -19,8 +19,8 @@ fn main() {
     let mut tn = 0.;
 
     for _ in 0..100 {
-    	yn = yn + h * f(tn, yn);
 		data.push((tn, yn));
+    	yn = yn + h * f(tn, yn);
     	tn = tn + h;
     }
 }

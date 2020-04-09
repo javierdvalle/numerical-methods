@@ -16,9 +16,9 @@ function main()
 
 	t = 0
 	for n in 1:trunc(Int, (t_end-t0)/h)
-	    yn = euler(tn, yn, h, f)
 	    append!(T, tn)
 	    append!(Y, yn)
+	    yn = euler(tn, yn, h, f)
 	    tn = tn + h
 	end
 
