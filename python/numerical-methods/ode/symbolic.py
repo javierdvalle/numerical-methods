@@ -20,7 +20,7 @@ def method_order(f, method, t0, y0):
     numerical = method
 
     replacements = [ (y1(h).diff(h,0).subs({h:0}), numerical.subs({h:0})) ]
-    for i in range(1,7):
+    for i in range(1,10):
         exact_eval = exact.subs({t:t0}).subs({y(0):y0})
         numerical = numerical.diff(h)
         numerical_eval = numerical.subs({h:0})
